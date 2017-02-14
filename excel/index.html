@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Excel on HTML</title>
+    <link href="css/excel.css" rel="stylesheet" type="text/css">
+</head>
+<!-- 基本レイアウトは動画を参考に -->
+<body>
+<button onclick="addColumn();">列を追加する</button>
+<button onclick="addRow();">行を追加する</button>
+<table>
+    <!-- Excel root -->
+    <tbody id="excel">
+    <!-- Column header -->
+    <tr id="column-headers">
+        <td class="column-index row-index"></td>
+        <td class="column-index">A</td>
+        <td class="column-index">B</td>
+    </tr>
+    <tr>
+        <td class="row-index">1</td>
+        <td><textarea></textarea></td>
+        <td><textarea></textarea></td>
+    </tr>
+    <tr>
+        <td class="row-index">2</td>
+        <td><textarea></textarea></td>
+        <td><textarea></textarea></td>
+    </tr>
+    </tbody>
+</table>
+
+<script src="js/excel.js"></script>
+</body>
+</html>
